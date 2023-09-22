@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Assignment7</title>
+</head>
+<body>
+  
+  <div class="container">
+  <header class="header">
+    <h1>FreeCodeCamp Survey Form</h1>
+    <p class="header-1">Thank you for taking the time to help us improve the platform</p>
+
+  </header>
+    <div class="form_wrap">
+      <form action="process.php">
+      <div class="form_group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="input" placeholder="Enter your name" >
+      </div>
+
+      <div class="form_group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="input" placeholder="Enter your email">
+      </div>
+
+      <div class="form_group">
+        <label for="age">Age <span class="span">(optional)</span></label>
+        <input type="number" name="age" id="age" class="input" placeholder="Age">
+      </div>
+
+      <div class="form_group">
+        <label for="role">Which option best describes your current role</label>
+        <select name="role" id="role" class="input">
+          <option value="" disabled selected>Select current role</option>
+        </select>
+      </div>
+
+      <div class="form_group radio">
+        <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+        <label for=""><input type="radio" name="recommend" class="check" value="Definitely" id="recommend"> Definitely</label>
+        <label for=""><input type="radio" class="check" name="recommend" value="Maybe" id="recommend"> Maybe</label>
+        <label for=""><input type="radio" class="check" name="recommend" value="Not sure" id="recommend"> Not sure</label>
+      </div>
+
+      <div class="form_group">
+        <label for="feature">What is your favorite feature of FreeCodeCamp</label>
+        <select name="feature" id="feQature" class="input">
+          <option value="" disabled selected>Select an option</option>
+       </select>
+      </div>
+
+      <div class="form_group improve">
+        <label for="improve">What will you like to see improved? <span class="span">(check all that apply)</span></label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Front-end projects" id="improve"> Front-end projects</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Back-end projects" id="improve"> Back-end projects</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Data Visualization" id="improve"> Data Visualization</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Challenges" id="improve"> Challenges</label>
+        <label for=""><input type="checkbox"  class="check" name="improve" value="Open Source Community" id="improve"> Open Source Community</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Gitter help rooms" id="improve"> Gitter help rooms</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Videos" id="improve"> Videos</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="City meetups" id="improve"> City meetups</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Wiki" id="improve"> Wiki</label>
+        <label for=""><input type="checkbox" class="check" name="improve" value="Forum" id="improve"> Forum</label>
+        <label for=""><input type="checkbox" 
+        class="check" name="improve" value="Additional courses" id="improve"> Additional courses</label>
+        
+      </div>
+
+      <div class="form_group">
+        <label for="message">Any comments or suggestions?</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit" class="btn">submit</button>
+
+
+    </div>
+      </form>
+
+  </div>
+  
+</body>
+</html>
